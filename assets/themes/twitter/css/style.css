@@ -1,6 +1,6 @@
 /* Override some defaults */
 html, body {
-  background-color: #eee;
+  background-image: url(../retina_wood.png); background-repeat: repeat;
 }
 .navbar {
   margin-bottom: 0;
