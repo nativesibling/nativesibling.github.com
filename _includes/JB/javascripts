@@ -1,0 +1,4 @@
+<script type="text/javascript">
+  {% include JB/js/jquery.min.js %}
+  {% include JB/js/bootstrap.min.js %}
+</script>
