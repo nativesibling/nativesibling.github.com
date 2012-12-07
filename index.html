@@ -1,11 +1,6 @@
 ---
 layout: default
 ---
-{% include JB/setup %}
-
-<!-- <div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
-</div> -->
 
 <div id="myCarousel" class="carousel slide">
   <div class="carousel-inner">
@@ -36,49 +31,17 @@ layout: default
 </div>
 
 <div class="row">
+  <div class="span6">
+    <h4>Tour Dates</h4>
+    <script type="text/javascript">
+      var widget = new BIT.Widget({"artist": "The Native Sibling", "bandsintown_footer_link": false, "share_links": false, "link_color": "#3b599e"});widget.insert_events();
+    </script>
+  </div>
+
   <div class="span4">
     <h4>Latest News</h4>
-    <ul>
-      <li class="views-row views-row-1 views-row-odd views-row-first">
-      <div class="views-field views-field-created">        <span class="field-content"><span class="month">Nov</span>
-      <span class="day">20</span></span>  </div>
-      <div class="views-field views-field-title">        <span class="field-content"><a href="/news/2012/blood-brothers-contest-winners">Blood Brothers Contest Winners</a></span>  </div></li>
-    </ul>
-  </div>
-
-  <div class="span3">
-    <img src="http://placehold.it/300x465&text=Image" />
-  </div>
-
-  <div class="span4">
-
-    <h4>Upcoming Shows</h4>
-    <hr/>
-
-    <div class="row">
-      <div class="span1">
-        <img src="http://placehold.it/50x50&text=[img]" />
-      </div>
-
-      <div class="span3">
-        <h5><a href="#">Venue Name</a></h5>
-        <h6 class="subheader show-for-small">Doors at 00:00pm</h6>
-      </div>
-    </div>
-    <hr/>
-
-
-    <div class="row">
-      <div class="span1">
-        <img src="http://placehold.it/50x50&text=[img]" />
-      </div>
-
-      <div class="span3">
-        <h5><a href="#">Venue Name</a></h5>
-        <h6 class="subheader show-for-small">Doors at 00:00pm</h6>
-      </div>
-    </div>
-    <hr/>
+    {% assign posts_collate = site.posts %}
+    {% include JB/posts_collate %}
   </div>
 </div>
 
@@ -86,6 +49,6 @@ layout: default
 
 <div class="row">
   <div class="span9">
-    <iframe width="560" height="315" src="http://www.youtube.com/embed/qPattldNpeI" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="http://www.youtube.com/embed/qPattldNpeI" frameborder="1" allowfullscreen></iframe>
   </div>
 </div>

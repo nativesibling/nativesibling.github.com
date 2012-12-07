@@ -1,4 +1,13 @@
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/js/stratus.js"></script>
+
 <script type="text/javascript">
-  {% include JB/js/jquery.min.js %}
-  {% include JB/js/bootstrap.min.js %}
+  $(document).ready(function(){
+    $.stratus({
+      links: 'https://soundcloud.com/thenativesibling/'
+    });
+  });
 </script>
+
+<script type="text/javascript" src="http://www.bandsintown.com/javascripts/bit_widget.js"></script>
