@@ -53,10 +53,3 @@ Usage:
   {% endfor %}
 {% endif %}
 {% assign posts_collate = nil %}
-
-    <ul>
-      <li class="views-row views-row-1 views-row-odd views-row-first">
-      <div class="views-field views-field-created">        <span class="field-content"><span class="month">Nov</span>
-      <span class="day">20</span></span>  </div>
-      <div class="views-field views-field-title">        <span class="field-content"><a href="/news/2012/blood-brothers-contest-winners">Blood Brothers Contest Winners</a></span>  </div></li>
-    </ul>
