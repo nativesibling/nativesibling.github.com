@@ -4,7 +4,10 @@ html, body {
 }
 .navbar {
   margin-bottom: 0;
-
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25),inset 0 -1px 0 rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25),inset 0 -1px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25),inset 0 -1px 0 rgba(0,0,0,0.1);
+  position: relative;
 }
 .navbar .navbar-inner {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#dbdbdb));
@@ -36,12 +39,17 @@ html, body {
 .container > footer {
   margin-top: 20px;
   margin-bottom: 50px;
-}
-.container > footer p {
   text-align: center; /* center align it with the container */
 }
-
+.container > footer img{
+  padding: 0 3px;
+  display: inline;
+}
 /* The white background content wrapper */
+body {
+  color: #47443D;
+  font-family: arial, helvetica, sans-serif;
+}
 .content {
   background-color: #fff;
   padding: 20px;
@@ -54,6 +62,38 @@ html, body {
           box-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 
+.content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.content ul li{
+  list-style-type: none;
+  margin: 20px 0;
+}
+.content ul li > div{
+  display: inline-block;
+  vertical-align: middle;
+}
+.content ul .date {
+  font-family: Georgia;
+  border-right: 1px solid #99968C;
+}
+.content ul .month, .day {
+  display: block;
+  padding-right: 10px;
+}
+.content ul .month{
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.content ul .day{
+  font-size: 30px;
+}
+.content ul .post-info{
+  padding-left: 10px
+}
 /* Page header tweaks */
 .page-header {
   background-color: #f5f5f5;

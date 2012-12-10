@@ -4,22 +4,22 @@ layout: default
 
 <div id="myCarousel" class="carousel slide">
   <div class="carousel-inner">
-    <div class="item">
-      <img src="http://placekitten.com/940/600" alt="">
+    <div class="item active">
+      <img src="/assets/img/water-too-deep.jpg" alt="">
       <div class="carousel-caption">
-        <h4>First Thumbnail label</h4>
-        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <h4>Water Too Deep, Words Too Shallow</h4>
+        <p>Check out our debut album on iTunes.</p>
       </div>
     </div>
-    <div class="item active">
-      <img src="http://placekitten.com/940/600" alt="" style="">
+    <div class="item">
+      <img src="http://placekitten.com/940/750" alt="" style="">
       <div class="carousel-caption">
         <h4>Second Thumbnail label</h4>
         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
       </div>
     </div>
     <div class="item">
-      <img src="http://placekitten.com/940/600" alt="" style="">
+      <img src="http://placekitten.com/940/750" alt="" style="">
       <div class="carousel-caption">
         <h4>Third Thumbnail label</h4>
         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -40,15 +40,7 @@ layout: default
 
   <div class="span4">
     <h4>Latest News</h4>
-    {% assign posts_collate = site.posts %}
-    {% include JB/posts_collate %}
-  </div>
-</div>
-
-
-
-<div class="row">
-  <div class="span9">
-    <iframe width="560" height="315" src="http://www.youtube.com/embed/qPattldNpeI" frameborder="1" allowfullscreen></iframe>
+    {% assign featured_posts = site.posts %}
+    {% include JB/featured_posts %}
   </div>
 </div>
